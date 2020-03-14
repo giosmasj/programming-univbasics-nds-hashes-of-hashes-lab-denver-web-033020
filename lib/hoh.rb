@@ -31,7 +31,7 @@
 # }
 
 def naming_system =
-  {label: "Kingdom",
+  {{label: "Kingdom",
    sub_category: {
      label: "Phylum",
      sub_category: {
@@ -51,7 +51,7 @@ def naming_system =
 {
    label: "Species",
    sub_category: nil
- }
+ }}
  (starting_node[:sub_category][:label]).to eq("Kingdom")
  (starting_node[:sub_category][:sub_category][:label]).to eq("Phylum")
  (starting_node[:sub_category][:sub_category][:sub_category][:label]).to eq("Class")
