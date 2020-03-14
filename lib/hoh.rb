@@ -30,9 +30,9 @@
 #   sub_category: nil
 # }
 
-def naming_system; {
-  :label => "Kingdom"
-    {
+def naming_system {
+  :label => "Kingdom",
+    sub_category: {
      :label => "Phylum",
        {
          :label => "Class",
