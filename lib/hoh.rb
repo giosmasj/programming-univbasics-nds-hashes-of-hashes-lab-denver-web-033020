@@ -43,9 +43,7 @@ def naming_system; {
                    {
                      :label => "Genus",
                        {
-                         :label => "Species"
-                           {
-                           }
+                         :label => "Species"{}
                        }
                    }
                }
