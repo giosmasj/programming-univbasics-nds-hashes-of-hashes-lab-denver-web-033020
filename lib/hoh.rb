@@ -31,13 +31,14 @@
 # }
 
 def naming_system;
-  {{label: "Kingdom",}
+  {label: "Kingdom",}
    sub_category: {
      label: "Phylum",}
      sub_category: {
        label: "Class",}
 {
    label: "Order",}
+   sub_category:
 {
    label: "Family",}
    sub_category: {
