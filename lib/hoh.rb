@@ -30,7 +30,7 @@
 #   sub_category: nil
 # }
 
-def def naming_system =
+def def naming_system
   {label: "Kingdom",
    sub_category: {
      label: "Phylum",
