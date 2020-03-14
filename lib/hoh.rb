@@ -30,7 +30,7 @@
 #   sub_category: nil
 # }
 
-def def naming_system
+def def naming_system =
   {label: "Kingdom",
    sub_category: {
      label: "Phylum",
@@ -52,6 +52,8 @@ def def naming_system
    label: "Species",
    sub_category: nil
  }
+ return naming_system
+ end
  (naming_system[:sub_category][:label]).to eq("Kingdom")
  (starting_node[:sub_category][:sub_category][:label]).to eq("Phylum")
  (naming_system[:sub_category][:sub_category][:sub_category][:label]).to eq("Class")
