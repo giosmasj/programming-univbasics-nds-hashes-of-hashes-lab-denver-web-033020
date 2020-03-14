@@ -52,13 +52,13 @@ def def naming_system
    label: "Species",
    sub_category: nil
  }
- (starting_node[:sub_category][:label]).to eq("Kingdom")
+ (naming_system[:sub_category][:label]).to eq("Kingdom")
  (starting_node[:sub_category][:sub_category][:label]).to eq("Phylum")
- (starting_node[:sub_category][:sub_category][:sub_category][:label]).to eq("Class")
- (starting_node[:sub_category][:sub_category][:sub_category][:sub_category][:label]).to eq("Order")
- (starting_node[:sub_category][:sub_category][:sub_category][:sub_category][:sub_category][:label]).to eq("Genus")
- (starting_node[:sub_category][:sub_category][:sub_category][:sub_category][:sub_category][:sub_category][:label]).to eq("Species")
- (starting_node[:sub_category][:sub_category][:sub_category][:sub_category][:sub_category][:sub_category][:sub_category]).to be_nil
+ (naming_system[:sub_category][:sub_category][:sub_category][:label]).to eq("Class")
+ (naming_system[:sub_category][:sub_category][:sub_category][:sub_category][:label]).to eq("Order")
+ (naming_system[:sub_category][:sub_category][:sub_category][:sub_category][:sub_category][:label]).to eq("Genus")
+ (naming_system[:sub_category][:sub_category][:sub_category][:sub_category][:sub_category][:sub_category][:label]).to eq("Species")
+ (naming_system[:sub_category][:sub_category][:sub_category][:sub_category][:sub_category][:sub_category][:sub_category]).to be_nil
   # Remember:
   #  Kingdom
   #  Phylum
