@@ -51,11 +51,7 @@ def naming_system;
    }
    }
   }
- 
-(naming_system[:sub_category][:label]).to eq("Kingdom")
- (starting_node[:sub_category][:sub_category][:label]).to eq("Phylum")
- (naming_system[:sub_category][:sub_category][:sub_category][:label]).to eq("Class")
-     
+  }
   # Remember:
   #  Kingdom
   #  Phylum
