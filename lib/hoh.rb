@@ -51,7 +51,31 @@ def naming_system =
    }
    }
   }
-  
+  def naming_system
+  {label: "Kingdom",
+   sub_category: {
+     label: "Phylum",
+     sub_category: {
+       label: "Class"
+{
+   label: "Order"
+{
+   label: "Family",
+   sub_category: {
+     label: "Genus",
+{
+   label: "Species",
+   sub_category: nil
+ }
+     }
+   }
+   }
+   }
+  }
+  }
+  (naming_system[:sub_category][:label]).to eq("Kingdom")
+ (starting_node[:sub_category][:sub_category][:label]).to eq("Phylum")
+ (naming_system[:sub_category][:sub_category][:sub_category][:label]).to eq("Class")
      
   # Remember:
   #  Kingdom
